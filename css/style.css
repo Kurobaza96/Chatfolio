@@ -2213,3 +2213,46 @@ body.dark .modal-overlay {
         width: 50%;
     }
 }
+
+/* CUSTOM: retro intro text + top/bottom vertical texts */
+
+.intro-screen .intro-text h1,
+.intro-screen .intro-text h2 {
+    font-family: 'VT323', monospace;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 1.15;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 767px) {
+    .intro-screen .intro-text h1,
+    .intro-screen .intro-text h2 {
+        font-size: 1.9rem;
+        line-height: 1.2;
+    }
+}
+
+@media (min-width: 768px) {
+    body { padding: 56px 0; }
+    .chat-container { min-height: calc(100vh - 112px); }
+    .intro-screen { height: calc(100vh - 284px); }
+    .intro-screen .image-container { height: calc(100vh - 474px); }
+
+    .vertical-texts-container { display: block; }
+
+    .vertical-texts-container .vertical-text {
+        writing-mode: horizontal-tb;
+        transform: none;
+        left: 0;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 700;
+        letter-spacing: 8px;
+        opacity: .2;
+    }
+    .vertical-texts-container .vertical-text.vertical-text-left  { top: 16px; bottom: auto; }
+    .vertical-texts-container .vertical-text.vertical-text-right { bottom: 16px; top: auto; }
+}
