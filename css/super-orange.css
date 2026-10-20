@@ -1,5 +1,5 @@
 /* =================================================================== */
-/* MUSTARD GOLD rgb(242, 170, 2)
+/* SUPER ORANGE rgb(250, 91, 15)
 ====================================================================== */
 
 .line:before,
@@ -10,11 +10,11 @@
 .intro-screen .rounded-animation,
 .intro-screen .hello:before,
 .intro-screen .hello:after {
-    background-color: rgb(242, 170, 2)
+    background-color: rgb(250, 91, 15)
 }
 
 .message-bubble.single-project-card {
-    background-color: rgba(242, 170, 2);
+    background-color: rgba(250, 91, 15);
 }
 
 .intro-screen h1 span,
@@ -24,26 +24,26 @@
 .chat-footer .primary-nav .btn-primary-nav:hover,
 body.dark .chat-footer .primary-nav .btn-primary-nav:hover,
 .chat-footer .primary-nav .btn-primary-nav:hover i { 
-    color: rgb(242, 170, 2); 
+    color: rgb(250, 91, 15); 
 }
 
 .chat-footer .primary-nav .btn-primary-nav i {
-    color: rgba(242, 170, 2, .7);
+    color: rgba(250, 91, 15, .7);
 }
 
 .chat-footer .primary-nav .btn-primary-nav:hover,
 body.dark .chat-footer .primary-nav .btn-primary-nav:hover { 
-   border-color: rgba(242, 170, 2, .7); 
+   border-color: rgba(250, 91, 15, .7); 
 }
 
 .btn-secondary {
-    border: 1px solid rgb(242, 170, 2);
+    border: 1px solid rgb(250, 91, 15);
 }
 
 .single-project-card {
-    border: 1px solid rgba(242, 170, 2, .1);
+    border: 1px solid rgba(250, 91, 15, .1);
 }
 
 .chat-avatar {
-    border: 1px solid rgba(242, 170, 2, .3);
+    border: 1px solid rgba(250, 91, 15, .3);
 }
