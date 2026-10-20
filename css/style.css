@@ -2214,8 +2214,9 @@ body.dark .modal-overlay {
     }
 }
 
-/* CUSTOM: retro intro text + top/bottom vertical texts */
+/* CUSTOM: retro intro text + horizontal top/bottom texts in the chat */
 
+/* Intro text: smaller, vintage terminal font */
 .intro-screen .intro-text h1,
 .intro-screen .intro-text h2 {
     font-family: 'VT323', monospace;
@@ -2233,26 +2234,39 @@ body.dark .modal-overlay {
     }
 }
 
-@media (min-width: 768px) {
-    body { padding: 56px 0; }
-    .chat-container { min-height: calc(100vh - 112px); }
-    .intro-screen { height: calc(100vh - 284px); }
-    .intro-screen .image-container { height: calc(100vh - 474px); }
+/* Name at the top, job title at the bottom, inside the chat window */
+.vertical-texts-container {
+    display: block;
+    z-index: 7;
+}
 
-    .vertical-texts-container { display: block; }
+.vertical-texts-container .vertical-text.vertical-text-left,
+.vertical-texts-container .vertical-text.vertical-text-right {
+    writing-mode: horizontal-tb;
+    transform: none;
+    z-index: 7;
+    left: 50%;
+    right: auto;
+    width: min(100%, 1140px);
+    translate: -50% 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 6px;
+    opacity: .35;
+}
 
-    .vertical-texts-container .vertical-text {
-        writing-mode: horizontal-tb;
-        transform: none;
-        left: 0;
-        right: 0;
-        width: 100%;
-        text-align: center;
-        font-size: 1.3rem;
-        font-weight: 700;
-        letter-spacing: 8px;
-        opacity: .2;
-    }
-    .vertical-texts-container .vertical-text.vertical-text-left  { top: 16px; bottom: auto; }
-    .vertical-texts-container .vertical-text.vertical-text-right { bottom: 16px; top: auto; }
+.vertical-texts-container .vertical-text.vertical-text-left {
+    top: 10px;
+    bottom: auto;
+}
+
+.vertical-texts-container .vertical-text.vertical-text-right {
+    bottom: 8px;
+    top: auto;
+}
+
+/* Keep a little room so the bottom text never touches the nav buttons */
+.chat-footer {
+    padding-bottom: 36px;
 }
